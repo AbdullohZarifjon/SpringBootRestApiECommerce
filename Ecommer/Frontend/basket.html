@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="title">Basket</title>
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <style>
+    .total-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background: white;    /* Orqa fon oq bo‘lsin */
+      padding: 10px 20px;
+      border-radius: 10px;  /* Yantig‘roq burchaklar */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Yengil soya */
+    }
+
+  </style>
+</head>
+<body>
+    <div class="card-header bg-dark text-white text-center">
+      <h1>Basket</h1>
+    </div>
+    <a href="main.html" class="btn btn-success m-2">Cancel</a>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>img</th>
+        <th>Product name</th>
+        <th>Product price</th>
+        <th>Decrement</th>
+        <th>Col</th>
+        <th>Increment</th>
+        <th>Total</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody id="tableForProducts">
+
+      </tbody>
+
+    </table>
+    <div class="total-container" id="total">
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/basket.js"></script>
+</body>
+
+</html>
